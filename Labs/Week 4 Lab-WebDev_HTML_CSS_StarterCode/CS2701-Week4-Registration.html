@@ -14,11 +14,16 @@
                        The css class of the menu is "navlist"
                        Check lecture slides about lists, an example of a more basic menu, and CSS class selector-->
             <ul class="navlist">
+                <li><a href="index">Home</a></li>
+                <li><a href="register">Register</a></li>
+                <li><a href="login">Login</a></li>
+                <li><a href="help">Help</a></li>
             </ul>
          </nav>
         <main>
             <!-- Check Week 4 Lecture to learn about HTML5 semantic elements-->
             <aside>
+                <input type="text" class="search" id="search" name="search" placeholder ="Search"><br>
             </aside>
             <section>
                 <form class="center" novalidate>
@@ -31,7 +36,18 @@
                            Learn more - link
                            Check lecture slides and the links on the slides to learn about forms
                            and how to create a button that would react to a click Event
-                        -->
+                        --->
+                        <label class="textInput" for="name">Name:</label>
+<input type="text" id="name" name="name" required maxlength="50"><br><br>
+
+<label class="textInput" for="email">Email:</label>
+<input type="email" id="email" name="email" required><br><br>
+
+<label class="textInput" for="password">Password:</label>
+<input type="password" id="password" name="password" required minlength="8"><br><br>
+
+<label class="textInput" for="repPassword">Re-type password:</label>
+<input type="password" id="repPassword" name="repPassword" required minlength="8"><br><br>
                     <!-- Example given for user type checkboxes-->
                     
                     <input type="checkbox" id="buyer" name="buyer" value="buyer">
@@ -40,6 +56,12 @@
                     <label for="seller">I want to sell produce from my allotment.</label><br><br>
 
                     <br><br>
+                    <input type="checkbox" id="tos" name="tos" value="tos" required>
+<label for="tos">I agree to the <a href="">Terms of Use</a> and <a href="">Privacy Policy</a>.</label>
+<br><br>
+
+<input type="button" id="button" value="Register">
+<a href="">Learn more</a>
                 </form>
                 <div class="center" id="hiddenSection">
                     <p id="hiddenParagraph"></p>
